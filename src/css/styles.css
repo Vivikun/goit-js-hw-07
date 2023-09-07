@@ -42,3 +42,13 @@
 .gallery__link:hover {
   cursor: zoom-in;
 }
+/* csdjbvsdivkbsdvkhsdgvisv */
+.modal {
+  position: relative;
+  max-width: 100%;
+}
+.modal-close {
+  position: absolute;
+  width: 30px;
+  cursor: pointer;
+}
