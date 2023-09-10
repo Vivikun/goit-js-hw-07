@@ -21,9 +21,7 @@ gallery.addEventListener("click", (event) => {
     const description = event.target.alt;
 
     const lightbox = basicLightbox.create(
-      `<div class="lightbox-content">
-      <img src="${imageUrl}" alt="${description}">
-      </div>`
+      `<img src="${imageUrl}" alt="${description}">`
     );
 
     lightbox.show();
