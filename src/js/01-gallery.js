@@ -20,15 +20,14 @@ gallery.addEventListener("click", (event) => {
     const imageUrl = event.target.getAttribute("data-source");
     const description = event.target.alt;
 
-    const img = new Image();
-    img.src = imageUrl;
-    img.alt = description;
-
     const lightbox = basicLightbox.create(
-      `<div class="lightbox-content"></div>`
+      `<div class="lightbox-content">
+      <img src="${imageUrl}" alt="${description}">
+      </div>`
     );
-    lightbox.element().querySelector(".lightbox-content").appendChild(img);
+
     lightbox.show();
+
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
         lightbox.close();
